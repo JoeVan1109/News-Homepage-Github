@@ -1,3 +1,106 @@
-
+@charset "UTF-8";
+header {
+  /* Icône burger */
+}
+header .sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: -250px;
+  padding-top: 60px;
+  transition: right 0.5s ease;
+}
+header .sidenav a {
+  margin: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+}
+header .sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+header .sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+header .sidenav a:hover {
+  color: #111;
+}
+header .sidenav.active {
+  right: 0;
+}
+header .burger-icon {
+  background-color: transparent;
+  border: none;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+header .burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: black;
+  margin: 5px;
+}
+header .bandeau {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  max-height: 90px;
+  display: flex;
+  justify-content: center;
+}
+header .bandeau .logo-bandeau {
+  width: 130px;
+  margin: 20px;
+}
+@media screen and (min-width: 1500px) {
+  header {
+    width: 100%;
+  }
+  header .bandeau {
+    display: flex;
+  }
+  header .bandeau .logo-bandeau {
+    width: 200px;
+    margin: 20px;
+  }
+  header .sidenav {
+    width: auto;
+    position: static;
+    height: 60px;
+    right: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 30px 0 0;
+    background-color: transparent;
+  }
+  header .sidenav a {
+    font-size: 20px;
+  }
+  header .sidenav .close {
+    visibility: hidden;
+    position: relative;
+    right: 25%;
+  }
+  header .sidenav.active {
+    right: 350px;
+  }
+  header .burger-icon {
+    visibility: hidden;
+    position: absolute;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
