@@ -14,6 +14,3 @@ function closeNav() {
 
 openBtn.addEventListener("click", openNav);
 closeBtn.addEventListener("click", closeNav);
-
-
-
