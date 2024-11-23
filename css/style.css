@@ -75,9 +75,9 @@ header .bandeau .logo-bandeau {
   width: 130px;
   margin: 20px;
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1440px) {
   header {
-    padding: 30px 70px 0 70px;
+    padding: 70px 150px 0 100px;
     display: flex;
     justify-content: space-between;
   }
@@ -108,6 +108,7 @@ header .bandeau .logo-bandeau {
     margin: 0 15px;
     font-size: 18px;
     padding: 10px 0;
+    color: hsl(236, 13%, 42%);
   }
   header .sidenav .close {
     display: none;
@@ -124,21 +125,25 @@ header .bandeau .logo-bandeau {
   }
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+@media screen and (min-width: 1440px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "bloc-intro-banner bloc-intro-banner bloc-new" "bloc-article bloc-article bloc-article";
+  }
+  .bloc-intro-banner {
+    grid-area: bloc-intro-banner;
+  }
+  .bloc-article {
+    grid-area: bloc-article;
+  }
+  .bloc-new {
+    grid-area: bloc-new;
+  }
 }
-.container .bloc-intro-bannner {
-  grid-column: span 2;
-}
-.container .bloc-new {
-  grid-column: span 1;
-}
-.container .bloc-article {
-  grid-column: span 3;
-}
-
 .container .btn-read {
   width: 200px;
   height: 50px;
@@ -171,6 +176,11 @@ html .container, body .container {
   margin-top: 70px;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+}
+@media screen and (min-width: 1440px) {
+  html .container, body .container {
+    padding: 0 100px 0 100px;
+  }
 }
 html .container .bloc-intro-banner .img-banner, body .container .bloc-intro-banner .img-banner {
   width: 100%;
@@ -216,6 +226,11 @@ html .container .bloc-new .sous-bloc .text-sous-bloc, body .container .bloc-new 
   color: hsl(233, 8%, 79%);
   line-height: 27px;
 }
+@media screen and (min-width: 1440px) {
+  html .container .bloc-new, body .container .bloc-new {
+    margin: 0;
+  }
+}
 html .container .bloc-article, body .container .bloc-article {
   margin-bottom: 50px;
 }
@@ -239,6 +254,11 @@ html .container .bloc-article .article .bloc-text-article .title-article, body .
 html .container .bloc-article .article .bloc-text-article .text-article, body .container .bloc-article .article .bloc-text-article .text-article {
   color: hsl(236, 13%, 42%);
   line-height: 27px;
+}
+@media screen and (min-width: 1440px) {
+  html .container .bloc-article, body .container .bloc-article {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

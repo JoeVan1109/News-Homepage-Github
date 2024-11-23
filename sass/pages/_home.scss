@@ -25,6 +25,9 @@ html, body {
 
         font-family: "Inter", sans-serif;
 
+        @media screen and (min-width: 1440px) {
+            padding: 0 100px 0 100px;
+        }
 
 
         .bloc-intro-banner {
@@ -103,6 +106,10 @@ html, body {
                     line-height: 27px;
                 }
             }
+            
+            @media screen and (min-width: 1440px) {
+                margin: 0;
+            }
         }
 
 
@@ -147,6 +154,12 @@ html, body {
                         line-height: 27px;
                     }
                 }
+            }
+
+            @media screen and (min-width: 1440px) {
+
+                display: flex;
+                
             }
         }
     }

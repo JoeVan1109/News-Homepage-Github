@@ -1,4 +1,5 @@
 header {
+
     
     .sidenav {
 
@@ -106,9 +107,14 @@ header {
         }
     }
 
-    @media screen and (min-width: 1500px) {
+    @media screen and (min-width: 1440px) {
 
-        padding: 30px 70px 0 70px;
+
+        padding: 70px 150px 0 100px;
+
+        
+
+
 
         display: flex;
         justify-content: space-between;
@@ -150,6 +156,7 @@ header {
                     margin: 0 15px;
                     font-size: 18px;
                     padding: 10px 0;
+                    color: $darkgreyblue;
                 }
             }
     
