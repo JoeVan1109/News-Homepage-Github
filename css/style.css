@@ -128,6 +128,19 @@ header .bandeau .logo-bandeau {
   }
 }
 
+.container .btn-read {
+  width: 200px;
+  height: 50px;
+  margin: 23px 0 32px 0;
+  border: none;
+  background-color: hsl(5, 85%, 63%);
+  font-size: 17px;
+  font-weight: 700;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  color: hsl(240, 100%, 5%);
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -145,6 +158,7 @@ html .container, body .container {
   padding-left: 5%;
   padding-right: 5%;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 html .container .img-banner, body .container .img-banner {
   width: 100%;
