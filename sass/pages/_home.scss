@@ -1,11 +1,46 @@
-body {
+html, body {
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 
     font-family: "Inter", sans-serif;
 
+    main {
+        width: 100%;
+    }
+
     .container {
+        
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding-left: 5%;
+        padding-right: 5%;
 
-        .banner {
+        box-sizing: border-box;
 
+        .img-banner {
+            width: 100%;
+            
+        }
+
+        .title {
+            font-size: 50px;
+            font-weight: 800;
+
+            line-height: 50px;
+
+            margin: 23px 0 23px 0;
+        }
+
+        .bloc-intro {
+            color: $darkgreyblue;
+
+            word-spacing: 2px;
+
+            line-height: 27px;
         }
     }
 }

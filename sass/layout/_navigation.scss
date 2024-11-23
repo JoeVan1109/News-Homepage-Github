@@ -107,56 +107,60 @@ header {
     }
 
     @media screen and (min-width: 1500px) {
-
-        
-
-        width: 100%;
-
-        .bandeau {
-
+        header {
             display: flex;
-
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 70px 0 50px 70px;
+            box-sizing: border-box;
+        }
+    
+        .bandeau {
+            position: static;
+            z-index: 1;
+            width: auto;
+            max-height: none;
+            
+    
             .logo-bandeau {
-
-                width: 200px;
-
-                margin: 20px;
-
+                width: 60px;
+                margin: 0;
             }
         }
-
+    
         .sidenav {
-            
             width: auto;
-
             position: static;
-
-            height: 60px;
-
-            right: auto;
-
+            height: auto;
+            padding: 0;
             display: flex;
             justify-content: flex-end;
-            
-
-            padding: 30px 30px 0 0;
-
-
+            align-content: center;            
             background-color: transparent;
-
-            a {
-
-                font-size: 20px;
+    
+            .bloc-link {
+                display: flex;
                 
-            }
 
+                margin-top: 0;
+    
+                a {
+                    margin: 0 15px;
+                    font-size: 18px;
+                    padding: 10px 0;
+                }
+            }
+    
             .close {
-                visibility: hidden;
-                position: relative;
-                right: 25%;
+                display: none;
             }
-
         }
+    
+        #openBtn {
+            display: none;
+        }
+    
 
         .sidenav.active {
             right: 350px;
