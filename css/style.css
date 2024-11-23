@@ -177,6 +177,7 @@ html .container .bloc-intro-banner .bloc-intro, body .container .bloc-intro-bann
 }
 html .container .bloc-new, body .container .bloc-new {
   background-color: hsl(240, 100%, 5%);
+  margin: 45px 0 45px 0;
   padding: 20px;
 }
 html .container .bloc-new .ligne, body .container .bloc-new .ligne {
@@ -202,6 +203,30 @@ html .container .bloc-new .sous-bloc .title-sous-bloc, body .container .bloc-new
 }
 html .container .bloc-new .sous-bloc .text-sous-bloc, body .container .bloc-new .sous-bloc .text-sous-bloc {
   color: hsl(233, 8%, 79%);
+  line-height: 27px;
+}
+html .container .bloc-article, body .container .bloc-article {
+  margin-bottom: 50px;
+}
+html .container .bloc-article .article, body .container .bloc-article .article {
+  display: flex;
+  margin: 25px 0 35px 0;
+}
+html .container .bloc-article .article .img-article, body .container .bloc-article .article .img-article {
+  width: 30%;
+  margin-right: 30px;
+}
+html .container .bloc-article .article .bloc-text-article .number-article, body .container .bloc-article .article .bloc-text-article .number-article {
+  color: hsl(5, 85%, 63%);
+  font-size: 35px;
+}
+html .container .bloc-article .article .bloc-text-article .title-article, body .container .bloc-article .article .bloc-text-article .title-article {
+  color: hsl(240, 100%, 5%);
+  font-size: 20px;
+  margin: 20px 0 20px 0;
+}
+html .container .bloc-article .article .bloc-text-article .text-article, body .container .bloc-article .article .bloc-text-article .text-article {
+  color: hsl(236, 13%, 42%);
   line-height: 27px;
 }
 

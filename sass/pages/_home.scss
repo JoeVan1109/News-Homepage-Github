@@ -53,6 +53,7 @@ html, body {
         .bloc-new {
             background-color: $darkblue;
 
+            margin: 45px 0 45px 0;
             padding: 20px;
 
             .ligne {
@@ -98,6 +99,51 @@ html, body {
                     color: $greyblue;
 
                     line-height: 27px;
+                }
+            }
+        }
+
+
+        .bloc-article {
+
+            margin-bottom: 50px;
+
+
+            .article {
+
+                display: flex;
+
+                margin: 25px 0 35px 0;
+
+                .img-article {
+                    width: 30%;
+
+                    margin-right: 30px;
+                }
+
+
+                .bloc-text-article {
+
+                    .number-article {
+                        color: $red;
+    
+                        font-size: 35px;
+    
+                    }
+    
+                    .title-article {
+                        color: $darkblue;
+    
+                        font-size: 20px;
+    
+                        margin: 20px 0 20px 0;
+                    }
+    
+                    .text-article {
+                        color: $darkgreyblue;
+
+                        line-height: 27px;
+                    }
                 }
             }
         }
