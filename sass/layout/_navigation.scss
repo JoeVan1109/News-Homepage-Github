@@ -93,38 +93,39 @@ header {
         max-height: 90px;
 
         display: flex;
-        justify-content: space-between;
-        align-content: center;
+        justify-content: center;
 
         
 
 
 
         .logo-bandeau {
-            width: 50px;
+            width: 130px;
 
             margin: 20px;
         }
     }
 
     @media screen and (min-width: 1500px) {
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            padding: 70px 0 50px 70px;
-            box-sizing: border-box;
-        }
+
+        padding: 30px 70px 0 70px;
+
+        display: flex;
+        justify-content: space-between;
     
         .bandeau {
-            position: static;
-            z-index: 1;
+            
+            position: relative;
+
+            justify-content: flex-start;
+
             width: auto;
             max-height: none;
             
     
             .logo-bandeau {
+
+                
                 width: 60px;
                 margin: 0;
             }
@@ -136,8 +137,7 @@ header {
             height: auto;
             padding: 0;
             display: flex;
-            justify-content: flex-end;
-            align-content: center;            
+            justify-content: flex-end;          
             background-color: transparent;
     
             .bloc-link {
